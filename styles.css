@@ -1,0 +1,60 @@
+/* style.css - Dashboard Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  background: #1f1f1f;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #333;
+}
+
+h1 {
+  margin: 0;
+  color: #ffcc00;
+}
+
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  display: block;
+  padding: 20px;
+  background: #1e1e1e;
+  color: #ffcc00;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s ease;
+  text-align: center;
+  font-weight: bold;
+}
+
+.project-card:hover {
+  background: #ffcc00;
+  color: #121212;
+  transform: translateY(-4px);
+}
+
+footer {
+  margin: 40px 0 20px;
+  font-size: 0.9em;
+  color: #777;
+}
