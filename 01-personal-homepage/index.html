@@ -3,13 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Homepage</title>
   </head>
   <body>
     <header>
-      <h1>Welcome to my Homepage!</h1>
+      <h1>Welcome to my Page!</h1>
       <p>I'm Basharat, an aspiring Web Dev.</p>
+
+      <!-- Social Links -->
+      <div class="social-links">
+        <a
+          href="https://github.com/basharat-irshad"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="devicon-github-original"></i>
+        </a>
+        <a
+          href="https://linkedin.com/in/basharat-irshad"
+          target="_blank"
+          aria-label="LinkedIn"
+        >
+          <i class="devicon-linkedin-plain"></i>
+        </a>
+      </div>
     </header>
 
     <main>
@@ -19,28 +41,82 @@
           I am student of every coding channel on youtube that has taught me
           something and taken me closer to my goal.
         </p>
+        <section>
+          <h2>Education.</h2>
+          <ul>
+            <li>Highschool in Computer Science.</li>
+            <li>Matriculation in General Science.</li>
+          </ul>
+        </section>
       </section>
+      <!-- Skills and Tech Stack to be arranged on the same level with flex or grid -->
+      <div class="bento-grid">
+        <section>
+          <h2>Tech Stack.</h2>
+          <div class="tech-stack">
+            <i class="devicon-html5-plain colored"></i>
+            <i class="devicon-css3-plain colored"></i>
+            <i class="devicon-javascript-plain colored"></i>
+            <i class="devicon-git-plain colored"></i>
+            <i class="devicon-github-original"></i>
+            <i class="devicon-react-original colored text-5xl"></i>
+            <i class="devicon-mysql-plain colored text-5xl"></i>
+            <i class="devicon-postgresql-plain colored text-5xl"></i>
+            <i class="devicon-mongodb-plain colored text-5xl"></i>
+          </div>
+        </section>
+
+        <section>
+          <h2>Skills.</h2>
+          <ul>
+            <li>Front-End Web Dev.</li>
+            <li>
+              Building reliable web apps, focusing on great user experience.
+            </li>
+          </ul>
+        </section>
+      </div>
+
       <section>
         <h2>Favorite Quote.</h2>
         <blockquote>
-          "Give up on your dream and die." - Captain Levi.
+          "When you are hungry, eat." - <span id="Luffy">Monkey D. Luffy.</span>
         </blockquote>
       </section>
+
       <section>
+        <!-- Projects Section to be included. -->
         <h2>My Hobbies.</h2>
-        <ul>
-          <li>Cricket.</li>
-          <li>Football.</li>
-          <li>Traveling.</li>
-          <li>Videogames.</li>
-          <li>Being stuck in tutorial hell.</li>
-        </ul>
+        <div>
+          <ul>
+            <li>Cricket.</li>
+            <li>Football.</li>
+            <li>Traveling.</li>
+            <li>Videogames.</li>
+            <li>Being stuck in tutorial hell.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Form to be included -->
+      <section class="contact-form">
+        <h2>Contact Me.</h2>
+        <form action="#" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
       </section>
     </main>
 
     <footer>
-      <p>Contact me at: iambasharatirshad@gmail.com</p>
-      <p>&copy; 2025, Basharat Irshad.</p>
+      <p>&copy; 2025, Basharat Irshad. All rights reserved.</p>
     </footer>
   </body>
 </html>
